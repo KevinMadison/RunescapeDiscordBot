@@ -22,9 +22,9 @@ function createHelpMessage(message, args){
 	.setDescription('Here are all the supported commands: ')
 	.setThumbnail(smashBossBrosLogo)
 	.addFields(
-		{ name: 'Creating an Event', value: '1. -create rots <game-time>\n 2. -create aod <game-time> <# of people> <keeps/split>'},
-		{ name: 'Checking bot health', value: '-ping'},
-		{ name: 'List all the commands:', value: '-help'},
+		{ name: 'Creating an Event', value: '```-create rots <game-time>```\n ```-create aod <game-time> <# of people> <keeps/split>```'},
+		{ name: 'Checking bot health', value: '```-ping```'},
+		{ name: 'List all the commands:', value: '```-help```'},
 	)
 	.setTimestamp()
     .setFooter('Smash Boss Bros', smashBossBrosLogo);

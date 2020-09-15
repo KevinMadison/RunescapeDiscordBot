@@ -27,16 +27,17 @@ client.on('message', message =>{
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
 
-    // client.commands.get(command).execute(message, args);
-    // if(command === 'ping'){
-    //     client.commands.get('ping').execute(message, args);
-    // }
-
     try {
         client.commands.get(command).execute(message, args);
     } catch (error) {
         console.error(error);
         message.reply('there was an error trying to execute that command!');
+    }
+});
+
+client.on('messageReactionAdd', (reaction, user) => {
+    if(reaction.message.author.id === client.user.id){
+        console.log('a reaction has been added');
     }
 });
 
