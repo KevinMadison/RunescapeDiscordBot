@@ -42,4 +42,4 @@ client.on('messageReactionAdd', (reaction, user) => {
 });
 
 // has to be the last line of this file.
-client.login('NzU1MTI3Mjc1ODI1MDA0NTQ2.X1-xFA.m4ydCaPOPyxNqWpm3GwselmvKjs');
+client.login('[discord key goes here]');
